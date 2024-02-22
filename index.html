@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Johnny's Zoo</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.birds.min.js"></script>
+    <script>
+      window.onload = function () {
+        VANTA.BIRDS({
+          el: "#container",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          birdSize: 2.3,
+          scaleMobile: 1.0,
+          quantity: 3.0,
+        });
+      };
+    </script>
+    <title>Muhammad's Zoo</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
   </head>
   <body>
-    <h1>Welcome to Johnny's Zoo</h1>
-    <h3>See the animals at the zoo:</h3>
-    <div class="link">
-      <a href="polar-bear.html">Polar Bear</a>
+    <div id="container">
+      <div class="text-container">
+        <h1 class="title">Welcome to Muhammad's Zoo</h1>
+        <h2 class="header">See the animals at the zoo:</h2>
+        <div class="link">
+          <a href="tiger.html">Polar Bear</a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
