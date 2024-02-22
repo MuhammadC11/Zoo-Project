@@ -6,15 +6,20 @@
     <script>
       window.onload = function () {
         VANTA.BIRDS({
-          el: "#container",
+          el: "#vantaContainer",
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
           minHeight: 200.0,
           minWidth: 200.0,
           scale: 1.0,
-          birdSize: 2.3,
           scaleMobile: 1.0,
+          birdSize: 2.3,
+          wingSpan: 36.0,
+          speedLimit: 4.0,
+          separation: 81.0,
+          alignment: 97.0,
+          cohesion: 97.0,
           quantity: 3.0,
         });
       };
@@ -23,13 +28,36 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" />
   </head>
   <body>
-    <div id="container">
+    <div id="vantaContainer">
       <div class="text-container">
         <h1 class="title">Welcome to Muhammad's Zoo</h1>
-        <h2 class="header">See the animals at the zoo:</h2>
-        <div class="link">
-          <a href="tiger.html">Polar Bear</a>
-        </div>
+      </div>
+    </div>
+    <h2 class="header">See the animals at the zoo:</h2>
+    <div class="links">
+      <div class="card">
+        <h3 class="animal-name">Tiger</h3>
+        <a href="tiger.html" class="imageLink">
+          <img src="./img/tiger.jpg" />
+        </a>
+      </div>
+      <div class="card">
+        <h3 class="animal-name">Eagle</h3>
+        <a href="tiger.html" class="imageLink">
+          <img src="./img/eagle.jpg" />
+        </a>
+      </div>
+      <div class="card">
+        <h3 class="animal-name">Gorilla</h3>
+        <a href="tiger.html" class="imageLink">
+          <img src="./img/gorilla.jpg" />
+        </a>
+      </div>
+      <div class="card">
+        <h3 class="animal-name">Panda</h3>
+        <a href="tiger.html" class="imageLink">
+          <img src="./img/panda.jpg" />
+        </a>
       </div>
     </div>
   </body>

@@ -1,19 +1,19 @@
 body,
 html {
   font-family: Gill Sans, sans-serif;
-  background-color: salmon;
+  background-color: #020f1f;
   text-align: center;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   color: white;
 }
 
-#container {
+#vantaContainer {
   width: 100vw;
   text-align: center;
-  height: 100vh;
+  height: 75vh;
 }
 
 .text-container {
@@ -24,18 +24,16 @@ html {
   width: 100%;
 }
 .title {
-  font-size: 3em;
+  font-size: 4em;
   color: white;
   margin-top: 0;
-
   width: 100%;
 }
 
 .header {
-  padding: 20px;
-
   width: 100%;
   z-index: 100;
+  font-size: 3em;
 }
 
 h1 {
@@ -52,6 +50,11 @@ a {
   color: white;
 }
 
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
 .button {
   padding: 10px 20px;
   font-size: 1.5em;
@@ -69,23 +72,90 @@ a {
   background-color: darkgray;
 }
 
-.button:focus {
-  outline: none;
+.card {
+  border-radius: 5px;
+  margin: 20px;
+  width: 20%;
+  display: inline-block;
+  background-color: #021c3b;
 }
 
-.button:disabled {
-  background-color: lightgray;
-  cursor: not-allowed;
+.card {
+  border-radius: 5px;
+  margin: 20px;
+  width: 20%;
+  display: inline-block;
+  background-color: #021c3b;
+  transition: transform 0.3s ease-in-out;
 }
 
-.button:disabled:hover {
-  background-color: lightgray;
+.card img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.card:hover img {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
-.button:disabled:active {
-  background-color: lightgray;
+.card:hover {
+  transform: scale(1.05);
 }
 
-.button:disabled:focus {
-  outline: none;
+.card img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  width: 332px;
+  height: 420px;
+}
+
+.card h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.card p {
+  font-size: 1.5em;
+}
+
+.card a {
+  color: white;
+}
+
+.animal-name {
+  font-size: 2em;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+  width: 332px;
+  height: 420px;
+}
+
+.card h2 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.card p {
+  font-size: 1.5em;
+}
+
+.card a {
+  color: white;
+}
+
+.animal-name {
+  font-size: 2em;
+  margin-top: 0;
+  text-align: center;
+}
+
+.imageLink {
+  text-decoration: none;
+  display: block;
+  width: 0px;
 }
