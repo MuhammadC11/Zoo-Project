@@ -46,10 +46,6 @@ p {
   color: white;
 }
 
-a {
-  color: white;
-}
-
 .links {
   display: flex;
   justify-content: space-around;
@@ -58,14 +54,16 @@ a {
 .button {
   padding: 10px 20px;
   font-size: 1.5em;
-  background-color: white;
+  background-color: #021c3b;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin: auto;
+  padding-bottom: 0;
 }
 
 .button:hover {
-  background-color: lightgray;
+  background-color: rgb(0, 0, 0);
 }
 
 .button:active {
@@ -76,17 +74,11 @@ a {
   border-radius: 5px;
   margin: 20px;
   width: 20%;
-  display: inline-block;
-  background-color: #021c3b;
-}
-
-.card {
-  border-radius: 5px;
-  margin: 20px;
-  width: 20%;
+  height: 70%;
   display: inline-block;
   background-color: #021c3b;
   transition: transform 0.3s ease-in-out;
+  margin-bottom: 4em;
 }
 
 .card img {
@@ -107,8 +99,9 @@ a {
 .card img {
   width: 100%;
   border-radius: 5px 5px 0 0;
-  width: 332px;
-  height: 420px;
+  width: 335px;
+  height: 480px;
+  margin-bottom: 10px;
 }
 
 .card h2 {
@@ -126,26 +119,6 @@ a {
 
 .animal-name {
   font-size: 2em;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 5px 5px 0 0;
-  width: 332px;
-  height: 420px;
-}
-
-.card h2 {
-  font-size: 2em;
-  margin-top: 0;
-}
-
-.card p {
-  font-size: 1.5em;
-}
-
-.card a {
-  color: white;
 }
 
 .animal-name {
@@ -158,4 +131,26 @@ a {
   text-decoration: none;
   display: block;
   width: 0px;
+}
+
+@media screen and (min-width: 2560px) {
+  .card img {
+    width: 571.5px; /* adjust as needed */
+    height: 720px; /* adjust as needed */
+  }
+  .header {
+    font-size: 4em;
+  }
+  .animal-name {
+    font-size: 3em;
+  }
+  .title {
+    font-size: 5em;
+  }
+  .button {
+    font-size: 2.5em;
+  }
+  .card {
+    margin-bottom: 3em;
+  }
 }
