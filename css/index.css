@@ -135,7 +135,7 @@ p {
 
 @media screen and (min-width: 2560px) {
   .card img {
-    width: 571.5px; /* adjust as needed */
+    width: 513.5px; /* adjust as needed */
     height: 720px; /* adjust as needed */
   }
   .header {
